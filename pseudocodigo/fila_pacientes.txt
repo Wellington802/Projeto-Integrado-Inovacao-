@@ -1,0 +1,28 @@
+Início
+
+// 1. Criar lista vazia de pacientes
+fila ← lista vazia
+
+// 2. Inserir 3 pacientes na fila
+Para i de 1 até 3 faça
+    Escreva("Digite o nome do paciente ", i, ": ")
+    Leia nome
+    Escreva("Digite o CPF do paciente ", i, ": ")
+    Leia cpf
+    paciente ← (nome, cpf)
+    fila.adicionar(paciente)
+FimPara
+
+// 3. Remover o primeiro paciente da fila para atendimento
+paciente_atendido ← fila.remover_primeiro()
+Escreva("Paciente atendido:")
+Escreva("Nome: ", paciente_atendido.nome)
+Escreva("CPF: ", paciente_atendido.cpf)
+
+// 4. Mostrar quem ainda está na fila
+Escreva("Pacientes restantes na fila:")
+Para cada paciente em fila faça
+    Escreva("Nome: ", paciente.nome, " , CPF: ", paciente.cpf)
+FimPara
+
+Fim
